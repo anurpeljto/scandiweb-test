@@ -50,7 +50,7 @@ const Hero = ({category, cart, setActive, handleToggleCart}) => {
           `
         }
 
-        const response = await fetch('http://138.197.176.133:3000/graphql', {
+        const response = await fetch('https://scandiweb-test-s5ph.onrender.com/graphql', {
           method:'POST',
           headers: {
             'Content-Type': 'application/json'

@@ -22,7 +22,7 @@ const Navbar = ({cart, handleToggleCart, isActive, setActive}) => {
     setActive(category == isActive ? category : category);
     setShowMobileMenu(!showMobileMenu);
     const setActiveCategory = async() => {
-      await fetch('http://138.197.176.133:3000/graphql', {
+      await fetch('https://scandiweb-test-s5ph.onrender.com/graphql', {
         method:'POST',
         headers: {
           'Content-Type': 'application/json'
