@@ -5,6 +5,8 @@ FROM php:8.3-apache
 RUN a2enmod rewrite
 RUN docker-php-ext-install mysqli
 
+COPY php.ini /usr/local/etc/php/
+
 RUN apt-get update && apt-get install -y git libzip-dev unzip && \
     docker-php-ext-install zip
 
