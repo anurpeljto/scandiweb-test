@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+    # Uncomment the following line if you need to set environment variables or configurations
+    # environment:
+    #   - SOME_ENV_VAR=value
+    # Uncomment the following line if you need to set file permissions
+    # user: "www-data:www-data"
