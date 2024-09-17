@@ -1,5 +1,5 @@
 # Use an official PHP image as a base
-FROM php:8.1-apache
+FROM php:8.3-apache
 
 # Install necessary PHP extensions
 RUN a2enmod rewrite
